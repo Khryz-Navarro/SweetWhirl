@@ -1,0 +1,53 @@
+import React from "react";
+import Chips from "../assets/img/choco_chips_ice_cream.png";
+import Oreo from "../assets/img/oreo_ice_cream.png";
+
+const Schedule = () => {
+  const schedule = [
+    { day: "Monday", hours: "8am to 10pm" },
+    { day: "Tuesday", hours: "8am to 10pm" },
+    { day: "Wednesday", hours: "8am to 10pm" },
+    { day: "Thursday", hours: "8am to 10pm" },
+    { day: "Friday", hours: "8am to 10pm" },
+    { day: "Saturday", hours: "8am to 10pm" },
+    { day: "Sunday", hours: "Closed" },
+  ];
+
+  return (
+    <div className="flex justify-between items-center max-w-7xl mx-auto p-8">
+      <div className="relative w-96">
+        <div className="absolute top-0 -left-4 w-80 h-80 bg-white rounded-2xl shadow-lg transform -rotate-6">
+          <img
+            src={Oreo}
+            alt="Ice cream"
+            className="w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+        <div className="absolute top-0 left-4 w-80 h-80 bg-white rounded-2xl shadow-lg">
+          <img
+            src={Chips}
+            alt="Ice cream"
+            className="w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+      </div>
+
+      <div className="flex-1 ml-16">
+        <h2 className="font-GochiHand text-4xl mb-8">We are available on</h2>
+        <div className="space-y-4">
+          {schedule.map((item) => (
+            <div key={item.day} className="flex items-center">
+              <span className="font-InstrumentSans text-xl font-medium w-32">
+                {item.day}
+              </span>
+              <div className="flex-1 mx-4 border-b-2 border-dashed border-black"></div>
+              <span className="font-InstrumentSans text-xl">{item.hours}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Schedule;
