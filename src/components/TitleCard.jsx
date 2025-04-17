@@ -3,7 +3,7 @@ import Vanilla from "../assets/img/vanilla_ice_cream.png";
 
 const TitleCard = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center mt-2">
       <div className="w-[1280px] h-[584px] bg-gradient-to-b from-[#FFE550] to-[#FF9D00]  rounded-[35px] p-16 border-b-5 border-2">
         <div className="flex justify-between items-center m-8">
           <div className="max-w-2xl p-4 m-4">

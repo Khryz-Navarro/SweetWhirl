@@ -1,29 +1,23 @@
 import React from "react";
-import CookiesnCream from "../assets/img/cookies_&_cream.png";
 
-const IceCreamCard = () => {
-  const [name, price] = "";
+const IceCreamCard = (props) => {
   return (
-    <>
-      <div className="h-[508px] w-[280px] p-4">
+    <div className="flex flex-col items-center w-64 p-4 m-4">
+      <div className="rounded-full overflow-hidden w-64 h-64 mb-4 border-2 border-black">
         <img
-          src={CookiesnCream}
-          alt="Ice Cream"
-          className="border-2 rounded-full"
+          src={props.img}
+          alt={props.alt}
+          className="w-full h-full object-cover"
         />
-        <div>
-          <h1>Cookies & Cream</h1>
-        </div>
-        <div>
-          <h1>${"100"}</h1>
-        </div>
-        <div>
-          <button className="font-InstrumentSans text-[24px]">
-            Add to Cart
-          </button>
-        </div>
       </div>
-    </>
+      <h2 className="font-GochiHand text-xl mb-2">{props.flavor}</h2>
+      <p className="font-InstrumentSans text-3xl font-bold mb-4">
+        ${Number(props.price).toFixed(2)}
+      </p>
+      <button className="w-full bg-white text-black border-2 border-black border-b-4 rounded-full py-3 px-6 font-InstrumentSans text-lg transition-all duration-550 hover:bg-black hover:text-white dura">
+        Add to Cart
+      </button>
+    </div>
   );
 };
 
