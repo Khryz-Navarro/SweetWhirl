@@ -1,8 +1,7 @@
 import React from "react";
+import Vanilla from "../assets/img/vanilla_ice_cream.png";
 
 const TitleCard = () => {
-  const vanilla_ice_cream = "src/assets/img/vanilla_ice_cream.png";
-
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="w-[1280px] h-[584px] bg-gradient-to-b from-[#FFE550] to-[#FF9D00]  rounded-[35px] p-16 border-b-5 border-2">
@@ -20,7 +19,7 @@ const TitleCard = () => {
           </div>
           <div className="ml-8">
             <div className="w-[368px] h-[372px] rounded-full overflow-hidden border-[2px] shadow-lg">
-              <img src={vanilla_ice_cream} alt="vanilla_ice_cream" />
+              <img src={Vanilla} alt="vanilla_ice_cream" />
             </div>
           </div>
         </div>
