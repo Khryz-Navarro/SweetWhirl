@@ -22,7 +22,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div>
-        <FaShoppingCart size={40} />
+        <FaShoppingCart size={40} className="hover:cursor-pointer" />
       </div>
     </nav>
   );
