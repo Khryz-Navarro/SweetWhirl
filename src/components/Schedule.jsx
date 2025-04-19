@@ -19,7 +19,7 @@ const Schedule = () => {
         <div className="justify-center items-center text-center p-8 m-8">
           <h1 className="font-bold font-GochiHand text-5xl">Schedule</h1>
         </div>
-        <div className="flex justify-between items-center max-w-7xl mx-auto p-8">
+        <div className="md:flex justify-between items-center max-w-7xl mx-auto p-8">
           <div className="relative w-auto">
             <div className="absolute top-0 -left-4 w-90 h-90 bg-white rounded-2xl shadow-lg transform -rotate-19">
               <img
@@ -37,7 +37,7 @@ const Schedule = () => {
             </div>
           </div>
           <div className="flex-1 ml-16">
-            <h2 className="font-GochiHand text-4xl mb-8">
+            <h2 className="font-GochiHand text-4xl md:mb-8 m-9">
               We are available on
             </h2>
             <div className="space-y-4">

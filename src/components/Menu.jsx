@@ -30,7 +30,7 @@ const Menu = () => {
           Flavors
         </h1>
       </div>
-      <div className="grid grid-cols-3 gap-1 p-4 m-4 justify-items-center">
+      <div className="md:grid grid-cols-3 gap-1 p-4 m-4 justify-items-center">
         {iceCreamFlavors.map((item, index) => (
           <IceCreamCard
             key={index}

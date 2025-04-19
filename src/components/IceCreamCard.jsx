@@ -13,7 +13,7 @@ const IceCreamCard = (props) => {
   };
   return (
     <div className="flex flex-col items-center w-64 p-4 m-4">
-      <div className="rounded-full overflow-hidden w-64 h-64 mb-4 border-2 border-black">
+      <div className="flex grid-col rounded-full overflow-hidden w-64 h-64 mb-4 border-2 border-black">
         <img
           src={props.img}
           alt={props.alt}
