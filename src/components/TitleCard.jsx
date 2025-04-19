@@ -6,7 +6,7 @@ const TitleCard = () => {
     <>
       <div className="md:flex mt-2 m-8 justify-center items-center">
         <div className="bg-gradient-to-b from-[#FFE550] to-[#FF9D00] rounded-[35px] border-b-5 border-2 md:flex h-auto w-full max-w-[1280px] p-12 md-p-24 overflow-hidden">
-          <div className="h-auto w-auto p-4 my-4">
+          <div className="h-auto w-auto p-4 my-4 md:mt-30">
             <h1 className="font-GochiHand text-5xl md:text-[64px] mb-8">
               SweetWhirl
             </h1>
