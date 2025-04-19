@@ -1,6 +1,6 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-// import { Link } from "react-router";
+import { Link } from "react-router";
 
 const NavBar = () => {
   const scrollTo = (x, y) => () => {
@@ -26,24 +26,26 @@ const NavBar = () => {
             Home
           </li>
           <li
-            onClick={scrollTo(0, 1300)}
+            onClick={scrollTo(0, 1500)}
             className="text-gray-600 hover:text-black mb-3 cursor-pointer">
             Menu
           </li>
           <li
-            onClick={scrollTo(0, 3500)}
+            onClick={scrollTo(0, 3700)}
             className="text-gray-600 hover:text-black mb-3 cursor-pointer">
             About
           </li>
           <li
-            onClick={scrollTo(0, 5000)}
+            onClick={scrollTo(0, 6000)}
             className="text-gray-600 hover:text-black mb-3 cursor-pointer">
             Contact
           </li>
         </ul>
       </div>
-      <div>
-        <FaShoppingCart size={40} className="hover:cursor-pointer" />
+      <div className="hover:cursor-pointer">
+        <Link to="/Cart">
+          <FaShoppingCart size={40} />
+        </Link>
       </div>
     </nav>
   );
