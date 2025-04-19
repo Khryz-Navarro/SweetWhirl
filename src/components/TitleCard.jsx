@@ -10,7 +10,7 @@ const TitleCard = () => {
             <h1 className="font-GochiHand text-5xl md:text-[64px] mb-8">
               SweetWhirl
             </h1>
-            <p className="font-InstrumentSans text-base md:text-[24px] max-w-4xl py-4">
+            <p className="font-InstrumentSans md:text-[24px] text-2xl max-w-4xl py-4">
               Indulge in a world of creamy delights, where every scoop is a
               moment of pure joy and every flavor tells a story. Chill out,
               treat yourself, and let every bite take you on a delicious escape.
