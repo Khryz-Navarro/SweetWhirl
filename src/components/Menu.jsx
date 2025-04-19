@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import IceCreamCard from "./IceCreamCard";
 import CookiesnCream from "../assets/img/cookies_&_cream.png";
 import Vanilla from "../assets/img/vanilla_cream.png";
@@ -10,6 +9,7 @@ import ChocoMint from "../assets/img/choco_mint.png";
 import Caramel from "../assets/img/caramel_cream.png";
 import Cherry from "../assets/img/cherry_cream.png";
 import Pistachio from "../assets/img/pistachio.png";
+import Raspberry from "../assets/img/raspberry.png";
 
 const Menu = () => {
   const iceCreamFlavors = [
@@ -22,6 +22,7 @@ const Menu = () => {
     { img: Caramel, flavor: "Caramel", price: 11 },
     { img: Cherry, flavor: "Cherry", price: 12 },
     { img: Pistachio, flavor: "Pistachio", price: 9 },
+    { img: Raspberry, flavor: "Raspberry", price: 9 },
   ];
   return (
     <div>
@@ -30,14 +31,22 @@ const Menu = () => {
           Flavors
         </h1>
       </div>
-      <div className="md:grid grid-cols-3 gap-1 p-4 m-4 justify-items-center">
+      <div className="md:grid grid-cols-3 gap-1 p-4 m-4 justify-items-center items-center">
         {iceCreamFlavors.map((item, index) => (
-          <IceCreamCard
+          <div
             key={index}
-            img={item.img}
-            flavor={item.flavor}
-            price={item.price}
-          />
+            className={`${
+              index === iceCreamFlavors.length - 1 &&
+              iceCreamFlavors.length % 3 === 1
+                ? "col-span-3 flex justify-center"
+                : ""
+            }`}>
+            <IceCreamCard
+              img={item.img}
+              flavor={item.flavor}
+              price={item.price}
+            />
+          </div>
         ))}
       </div>
     </div>
