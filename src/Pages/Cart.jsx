@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router";
 import Login from "./Login";
 
-//TODO: create cart page
+//TODO: add some component to cart page
+//TODO: add items when added to cart button is clicked
 function Cart() {
   return (
     <>

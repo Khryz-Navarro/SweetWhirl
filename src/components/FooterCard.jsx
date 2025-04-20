@@ -22,19 +22,29 @@ const FooterCard = () => {
           </p>
           <ul className="flex gap-4">
             <li>
-              <BsInstagram size={30} />
+              <a href="https://instagram.com/" target="_blank">
+                <BsInstagram size={30} />
+              </a>
             </li>
             <li>
-              <BsFacebook size={30} />
+              <a href="https://www.facebook.com/" target="_blank">
+                <BsFacebook size={30} />
+              </a>
             </li>
             <li>
-              <BsGithub size={30} />
+              <a href="https://github.com/" target="_blank">
+                <BsGithub size={30} />
+              </a>
             </li>
             <li>
-              <BsLinkedin size={30} />
+              <a href="http://linked.in/" target="_blank">
+                <BsLinkedin size={30} />
+              </a>
             </li>
             <li>
-              <BsPaypal size={30} />
+              <a href="https://paypal.com/" target="_blank">
+                <BsPaypal size={30} />
+              </a>
             </li>
           </ul>
         </div>
